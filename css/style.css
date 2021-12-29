@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Avenir Roman" ;
+    src: url(../logo-nopad.svg) format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../imagens/original.jfif) no-repeat top center ;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: "Avenir Roman", sans-serif;
+}
+
+.btn{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-decoration: none;
+    color: #f9f9f9;
+    background: rgba(0, 0, 0, 0.6) ;
+    padding: 8px 16px;
+    border: 1px solid #f9f9f9;
+    border-radius: 4px;
+    display: inline-block;
+    position: absolute;
+    top: 16px;
+    right: 32px;
+    transition: 0.2s ease;
+}
+.btn:hover{
+    background: white;
+    color: #000;
+}
+
+img.franquias {
+    max-width: 600px;
+    position: absolute;
+    bottom: 25px;
+}
+
+.logo{
+    max-width: 160px ;
+}
+
+.hero-content{
+    margin-top: -10px;
+    padding-left: 80px;
+}
+.hero-content > p{
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(192, 192, 192, 0.8);
+    margin-top: 16px;
+}
+
+h1{
+    
+    font-size: 43px;
+    line-height: 53px;
+    color: #f9f9f9;
+    margin: 20px 0 30px 0;
+}
+
+.precos-container{
+    display: flex;
+}
+
+.preco span{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #f9f9f9;
+}
+.preco{
+    width: 300px;
+    max-width: 100%;
+    color: rgba(192, 192, 192, 0.8) ;
+}
+
+.preco p:first-child{
+    margin: 0;
+}
+
+.preco p{
+    margin-bottom: 10px;
+}
+
+.preco:first-child{
+    display: grid;
+}
+
+.preco:first-child a {
+    align-self: end;
+}
+
+.preco a{
+    padding: 16.5px 14px;
+    background:#0063e5;
+    display: block;
+    border-radius: 4px;
+    font-size: 18px;
+    text-align: center;
+    color: rgba(192, 192, 192, 0.8);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    transition: 0.2s ease;
+}
+
+.preco a:hover {
+    background:#0483ee;
+}
+
+.preco + .preco{
+    margin-left: 32px;
+}
+
+.preco p {
+    margin: 16 0;
+}
