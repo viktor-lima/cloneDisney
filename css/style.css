@@ -6,122 +6,173 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    background: url(../imagens/original.jfif) no-repeat top center ;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    font-family: "Avenir Roman", sans-serif;
+body{
+    font-family: "Avenir Roman", sans-serif; 
 }
 
 .btn{
-    font-size: 15px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    text-align: center;
     text-decoration: none;
     color: #f9f9f9;
     background: rgba(0, 0, 0, 0.6) ;
-    padding: 8px 16px;
+    padding: 10px 14px;
     border: 1px solid #f9f9f9;
     border-radius: 4px;
     display: inline-block;
-    position: absolute;
-    top: 16px;
-    right: 32px;
-    transition: 0.2s ease;
+    transition: 0.2s ease
 }
-.btn:hover{
+
+.btn:hover {
     background: white;
     color: #000;
 }
 
-img.franquias {
-    max-width: 600px;
-    position: absolute;
-    bottom: 25px;
+.main{
+    background:  url(../img/bg.jpg) no-repeat top center; 
+    background-size: cover;
+    height: 110vh;
+}
+
+.content__plan{
+    float: left;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+h3{
+    font-size: 30px;
 }
 
 .logo{
-    max-width: 160px ;
-}
-
-.hero-content{
-    margin-top: -10px;
-    padding-left: 80px;
-}
-.hero-content > p{
-    font-size: 12px;
-    line-height: 18px;
-    color: rgba(192, 192, 192, 0.8);
-    margin-top: 16px;
-}
-
-h1{
-    
-    font-size: 43px;
-    line-height: 53px;
-    color: #f9f9f9;
-    margin: 20px 0 30px 0;
-}
-
-.precos-container{
     display: flex;
+    justify-content: center;
+    margin: 20px;
 }
 
-.preco span{
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    color: #f9f9f9;
-}
-.preco{
-    width: 300px;
-    max-width: 100%;
-    color: rgba(192, 192, 192, 0.8) ;
+.btn__primary{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 20px 0;
+    background: #0063e5;
+    padding: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #0063e5;
 }
 
-.preco p:first-child{
-    margin: 0;
+.btn__primary:hover{
+    background: #056ef7;
 }
 
-.preco p{
+.footnote{
+    font-size: small;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
-.preco:first-child{
-    display: grid;
-}
-
-.preco:first-child a {
-    align-self: end;
-}
-
-.preco a{
-    padding: 16.5px 14px;
-    background:#0063e5;
-    display: block;
-    border-radius: 4px;
-    font-size: 18px;
+.info__price{
     text-align: center;
-    color: rgba(192, 192, 192, 0.8);
+}
+
+.content__info{
+    float: left;
+    background: #040814;
+    height: 100vh;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+
+.img__tv img{
+    width: 600px;
+    height: 480px;
+}
+
+.text__content{
+    display: flex;
+}
+.content h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.content p{
+    font-size: 25px;
+    padding-right: 45px;
+    text-align: justify;
+}
+
+.content__combo{
+    float: left;
+    background: #040814;
+    padding-top: 100px;
+    padding-left: 50px;
+    height: 100vh;
+}
+
+.content__combo .content p{
+    font-size: 18px;
+    padding-right: 45px;
+    text-align: justify;
+}
+
+.content__combo .grid > div:first-child{
+    order: 2;
+}
+
+.content a{
+    display: flex;
+    margin-top: 30px;
+    margin: 30px 0 20px 0;
+    background: #0063e5;
+    padding: 20px;
+    font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing:1px;
-    transition: 0.2s ease;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #0063e5;
+    width: 400px;
+    justify-content: center;
 }
 
-.preco a:hover {
-    background:#0483ee;
+.content__download{
+    float: left;
+    background: #040814;
+    padding-top: 100px;
+    padding-left: 50px;
+    height: 100vh;
 }
 
-.preco + .preco{
-    margin-left: 32px;
+.img__leao{
+    width: 600px;
+    height: 480px;
 }
 
-.preco p {
-    margin: 16 0;
-}
