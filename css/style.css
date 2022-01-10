@@ -37,7 +37,7 @@ body{
 .main{
     background:  url(../img/bg.jpg) no-repeat top center; 
     background-size: cover;
-    height: 110vh;
+    height: 100vh;
 }
 
 .content__plan{
@@ -163,16 +163,74 @@ h3{
     justify-content: center;
 }
 
-.content__download{
-    float: left;
+.content__device{
+    display: flex;
     background: #040814;
     padding-top: 100px;
     padding-left: 50px;
     height: 100vh;
+    /* justify-content: center; */
+    text-align: center;
+
 }
 
-.img__leao{
-    width: 600px;
-    height: 480px;
+.text__info{
+    font-size: 26px;
+    margin-bottom: 10px;
 }
+
+.img{
+    width: 300px;
+    height: 180px;
+    /* display: flex; */
+}
+
+/* li{
+    list-style-type: none;
+} */
+
+/* .devices{
+    display: flex;
+    grid-template-columns: 4fr 4fr;
+    align-items: center;
+    padding: 30px 20px;
+} */
+
+.grid__item.center{
+    align-items: center;
+}
+
+.four__column .grid__item{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.grid__item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 12px;
+}
+
+
+.grid__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    justify-content: space-around;
+    margin: 0 -12px;
+}
+
+.medium{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.center p{
+    padding: 20px;
+}
+
 
