@@ -233,4 +233,31 @@ h3{
     padding: 20px;
 }
 
+.img__disney{
+    width: 100px;
+    height: 80px;
+}
+
+.footer{
+    display: flexbox;
+    background: #040814;
+    height: 50vh;
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+    padding-bottom: 25px;
+
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.footnote{
+    font-size: small;
+    line-height: 20px;
+}
+
 
